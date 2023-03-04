@@ -1,0 +1,68 @@
+:root {
+    --bg-color: #fff;
+    --switch: #d7d7d7;
+    --dot-one: #4f4f4f;
+    --dot-two: #df2a5d;
+}
+
+.dark-mode {
+    --bg-color: #000;
+    --dot-one : #d18649;
+}
+
+.star-mode {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://krystaljean.github.io/images/images/starz.png);
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch {
+    background-color: var(--switch);
+    border-radius: 500px;
+    /* height: 12%;
+    aspect-ratio: 2.5 / 1; */
+    height: 100px;
+    width: 250px;
+    margin: 12px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+}
+
+#dot-one {
+    border: solid 15px var(--dot-one)
+}
+
+#dot-two {
+    border: solid 15px var(--dot-two)
+}
+
+
+
